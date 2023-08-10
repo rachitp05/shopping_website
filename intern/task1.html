@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <link rel="stylesheet" href="task1.css">   
+        <script>
+            function addToCart(productName, price) {
+                const cartList = document.getElementById('cart-list');
+                const cartItem = document.createElement('li');
+                cartItem.innerText = `${productName} - ${price}`;
+                cartList.appendChild(cartItem);
+                cartList.style.display = 'block';
+            }
+    
+            function toggleCart() {
+                const cartList = document.getElementById('cart-list');
+                cartList.style.display = cartList.style.display === 'none' ? 'block' : 'none';
+            }
+        </script>
+    <title>LANDING PAGE</title>
+</head>
+<body>
+  <header>
+        <h1>R...for Rachit shoses</E-SHOP></h1>
+         <nav>
+               <ul>
+                  <li><a href="HOME.html">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Categories</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li class="cart">
+                        <button class="cart-button" onclick="toggleCart()">Cart</button>
+                        <table>
+                               <th>  <ul class="cart-list" id="cart-list"></ul></th>
+                        </table>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="TXT">
+            <h2>Welcome To Rachit's Showroom</h2>
+            <p>Discover the letest comfty shoses with discount prizes</p>
+            <a href="" class="cta-button">Shop Now</a>
+        </section>
+    
+        <section id="featured-products">
+            <h3>Featured Products</h3>
+            <div class="product">
+                <img src="s2.jpeg" alt="Product 1">
+                <h4>Avengers: Quantum Realm Men Low Top Sneakers By Marvel™</h4>
+                <p><small> <small>Official Licensed;<br>
+                    Avengers: Quantum Realm Men Low Top Sneaker. <br>
+                    Shop for Avengers: Quantum Realm Men Low Top Sneaker at The Souled Store</small></small></p>
+                <span class="price">₹ 1,999</span>
+                <button class="add-to-cart" onclick="addToCart('Product 1', '₹ 1,999')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="s1.jpeg" alt="Product 2">
+                <h4>ALDO Men Textured Sneaker Casual Shoes
+                </h4>
+                <p><small><small>A pair of round toe sneakers ,<br>
+                    has regular styling,<br>
+                     Lace-ups detail Synthetic upper Cushioned footbed Textured <br>
+                      and patterned outsole Warranty: 1 month </small></small></p>
+                <span class="price">₹ 5,599</span>
+                <button class="add-to-cart" onclick="addToCart('Product 2', '₹ 5,599')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="s.jpeg" alt="Product 1">
+                <h4>Id Men Brown Casual Loafer Shoes.</h4>
+                <p><small> <small>A pair of round-toe brown loafers, <br>
+                    has regular styling,<br>
+                     slip-on detail Synthetic Leather upper Cushioned footbed Textured <br>
+                      and patterned outsole Warranty: 1 month Warranty <br>
+                      provided by brand/manufacturer </small></small></p>
+                <span class="price">₹ 1,642</span>
+                <button class="add-to-cart" onclick="addToCart('Product 1', '₹ 1,642')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="12.jpeg" alt="Product 2">
+                <h4>Hush Puppies Men Tan Leather Derbys Casual Shoes
+                </h4>
+                <p><small><small>A pair of round toe tan derbys <br>
+                     ,has regular styling Lace-ups detail Leather upper Cushioned footbed Textured 
+                     <br>and patterned outsole </small></small></p>
+                <span class="price">₹ 7,199</span>
+                <button class="add-to-cart" onclick="addToCart('Product 2', '₹7,199')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="1.jpeg" alt="Product 1">
+                <h4>Woodland Men's Grey Casual Sneakers</h4>
+                <p><small>Elevate your casual footwear collection <br>
+                     with this stylish pair of grey sneakers from Woodland. <br>
+                      The rubber sole is slip-resistant and offers complete traction on most surfaces. <br>
+                       These sneakers come with nubuck upper which is stylish and also ensures optimum comfort. <br>
+                       It can be teamed up with a dress in your favorite shade <small> </small></small></p>
+                <span class="price">₹ 2,021 </span>
+                <button class="add-to-cart" onclick="addToCart('Product 1', '₹ 2,021')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="th.jpeg" alt="Product 2">
+                <h4>Puma Men Black Mesh Sneakers
+                </h4>
+                <p><small><small> A pair of black running sports shoes, <br>
+                    has regular styling, lace-up detail Mesh upper Cushioned footbed Textured <br>
+                     and patterned outsole Warranty: 3 months Warranty provided by brand/manufacturer
+                      </small></small></p>
+                <span class="price"> ₹ 3,999(55% off)</span>
+                <button class="add-to-cart" onclick="addToCart('Product 2', '₹2,66,990')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="s4.jpeg" alt="Product 1">
+                <h4>Style Shoes Men Leather Formal Slip-On Shoes</h4>
+                <p><small> <small>A pair of black solid round toe formal slip-ons <br>
+                    has a slip-on closure Leather upper Cushioned footbed Textured <br>
+                     and patterned PU outsole with a stacked heel </small></small></p>
+                <span class="price"> ₹ 1,599</span>
+                <button class="add-to-cart" onclick="addToCart('Product 1', '₹ 1,599')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="s3.jpeg" alt="Product 2">
+                <h4>DEAS Women Blue Lace-Ups Sneakers Casual Shoes
+                </h4>
+                <p><small><small>A pair of round toe blue sneakers Casual Shoes <br>
+                    has regular styling, Lace-ups detail Synthetic upper Cushioned footbed Textured <br>
+                     and patterned outsole</small></small></p>
+                <span class="price">₹ 899</span>
+                <button class="add-to-cart" onclick="addToCart('Product 2', '₹ 899')">Add to Cart</button>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p>Email:rachitpatel@gmail.com</p>
+                <p>Phone: 2343543456</p>
+            </div>
+            <div class="social-media">
+                <h4>Connect with Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Den"><img src="twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </footer>
+    
+       
+    
+    
+</body>
+</html>
